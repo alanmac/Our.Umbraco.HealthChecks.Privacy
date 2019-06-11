@@ -34,6 +34,10 @@ namespace Our.Umbraco.HealthChecks.Privacy.Checks.Privacy
         // todo: handle language files
         // public override string CheckErrorMessage => TextService.Localize("Our.Umbraco.HealthChecks.Privacy/privacyPolicyError");
         public override string CheckErrorMessage => "A Privacy Policy needs to be selected.";
+		
+		// todo: handle language files
+        // public override string CheckErrorMessage => TextService.Localize("Our.Umbraco.HealthChecks.Privacy/missingPrivacyPolicyError");
+        public override string MissingErrorMessage => "Please add an appSetting with 'Our.Umbraco.HealthChecks.Privacy.PrivacyPolicyUDI' as a key to your web.config";
 
         // todo: handle language files
         // public override string RectifySuccessMessage => TextService.Localize("Our.Umbraco.HealthChecks.Privacy/privacyPolicyRectifySuccess");
